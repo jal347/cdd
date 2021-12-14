@@ -1,17 +1,14 @@
-import pprint
 import sys
 import os.path
-import glob
-import time
 import logging
 from Bio import SeqIO
-from Bio.SeqFeature import FeatureLocation, BeforePosition, AfterPosition
+from Bio.SeqFeature import FeatureLocation
 import json
 
 from biothings.utils.common import SubStr, anyfile
 
 
-class GBFFParser:
+class CDDParser:
 
     def __init__(self, infile):
         self.infile = infile
